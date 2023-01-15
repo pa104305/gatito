@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en raya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="info">
+        <div id="player1"><h1 class="player1" id="puntuacion1">J1: </h1></div>
+        <h1 id="turnos"></h1>
+        <div id="player2"><h1 class="player2" id="puntuacion2">J2: </h1></div>
+        <button class="button" onclick="clearBoard()">reiniciar partida</button>
+        <button class="button" onclick="reset()">reiniciar juego</button>
+    </div>
+    <div class="game">
+        <table>
+            <tr>
+                <td class="esq" onclick="seleccionar('1', 'one')" id="one"></td>
+                <td class="esq" onclick="seleccionar('2', 'two')" id="two"></td>
+                <td class="esq" onclick="seleccionar('3', 'three')" id="three"></td>
+            </tr>
+            <tr>
+                <td class="esq" onclick="seleccionar('4', 'four')" id="four"></td>
+                <td class="esq" onclick="seleccionar('5', 'five')" id="five"></td>
+                <td class="esq" onclick="seleccionar('6', 'six')" id="six"></td>
+            </tr>
+            <tr>
+                <td class="esq" onclick="seleccionar('7', 'seven')" id="seven"></td>
+                <td class="esq" onclick="seleccionar('8', 'eight')" id="eight"></td>
+                <td class="esq" onclick="seleccionar('9', 'nine')" id="nine"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>

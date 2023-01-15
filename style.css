@@ -1,0 +1,85 @@
+*{
+    background: cornsilk;
+    box-sizing: border-box;
+}
+.info{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info > #turnos{
+    /*border: 1px solid black;*/
+    width: 50px;
+    text-align: center;
+    color: red;
+}
+.game{
+    width: 99vw;
+    height: 75vh;
+    border: 1px solid black;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+table{
+    width: 450px;
+    height: 450px;
+    margin-top: 25px;
+    background: black;
+    border: none;
+}
+td{
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+}
+tr:nth-child(1) > .esq:nth-child(1){
+    border-left: none;
+    border-top: none;
+}
+tr:nth-child(1) > .esq:nth-child(2){
+    border-top: none;
+}
+tr:nth-child(1) > .esq:nth-child(3){
+    border-right: none;
+    border-top: none;
+}
+tr:nth-child(2) > .esq:nth-child(1){
+    border-left: none;
+}
+tr:nth-child(2) > .esq:nth-child(3){
+    border-right: none;
+}
+tr:nth-child(3) > .esq:nth-child(1){
+    border-left: none;
+    border-bottom: none;
+}
+tr:nth-child(3) > .esq:nth-child(2){
+    border-bottom: none;
+}
+tr:nth-child(3) > .esq:nth-child(3){
+    border-right: none;
+    border-bottom: none;
+}
+/*.esq:hover{
+    transform: scale(1.1);
+}*/
+.button{
+    position: relative;
+    top: 20px;
+    width:100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    transition: all 0.5s;
+    border: 2px lightcoral solid;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background: red;
+    border: 1px solid darkred;
+}

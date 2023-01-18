@@ -33,7 +33,7 @@ function seleccionar(idn, idl){
         turn -= 1
         turnsGlobal += 1;
     }else{
-        alert("Espacio ocupado")
+        console.log("Espacio ocupado")
     }
     document.getElementById("turnos").innerText = turnsGlobal;
     //setTimeout(() => {comprobar()}, 1000)
@@ -83,7 +83,7 @@ function diagonalTwo(){
     const secondDiagonal = 3
     let sameColorRed = 0
     let sameColorYellow = 0
-    for(i = 0; i < 10; i += 2){
+    for(i = 0; i < 5; i += 2){
         if(spaces[(secondDiagonal + i)] == 'red'){sameColorRed += 1}
         if(spaces[(secondDiagonal + i)] == 'yellow'){sameColorYellow += 1}
         if(sameColorRed == 3){alert('el J1 GANA'); playerOne += 1; clearBoard()}

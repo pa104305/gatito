@@ -6,7 +6,7 @@ This game don't need some dependencie, because this game run in the web browser 
 This is an activity for practice logic, because this game don't contain a good design of the UI.
 
 Download the game using the following command:
-> $ git clone https://github.com/pa104305/gatito
+> `git clone https://github.com/pa104305/gatito`
 
 See my portfolio on:
     https://pa104305.github.io/portafolio
